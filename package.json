@@ -1,0 +1,13 @@
+{
+  "name": "simple-scaffolding",
+  "version": "1.0.0",
+  "bin": "./cli.js",
+  "main": "index.js",
+  "repository": "git@github.com:Humphrey2021/simple-scaffolding.git",
+  "author": "Humphrey <humphrey2021@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "inquirer": "^8.2.0"
+  }
+}
