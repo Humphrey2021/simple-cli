@@ -1,18 +1,25 @@
-# 脚手架
-
-通过nodejs开发一款小型的脚手架工具, 来更加直观的了解一下脚手架的工作过程
-
+## 脚手架是什么？
 > 脚手架其实就是nodejs的一个cli应用
 
-## 创建文件
+## 脚手架都做了什么？
+以`vue`为例
+1. 安装 vue-cli
+2. 运行 vue create app
+3. 命令行交互
+4. 生成项目基础结构
+
+## 使用nodeJs实现一款简单的脚手架，来更加直观的了解一下脚手架的工作过程
+
+### 创建文件
 ```shell
 mkdir sample-scaffolding
 cd sample-scaffolding
+# 初始化package.json文件
 yarn init
 ```
 ## 编辑package.json文件
+> 添加bin字段，指定入口文件
 ```json
-// package.json
 {
     "bin": "cli.js"
 }
@@ -65,7 +72,7 @@ inquirer.prompt([
 ```shell
 # 将此文件 link 到全局
 yarn link
-# 执行模块名
+# 执行模块名，即package.json里name属性对应的值
 sample-scaffolding
 ## 就可以在目标目录生成对应格式的文件
 ```
